@@ -56,6 +56,7 @@ html,body{
                                     /* Nav Part ends here */
 
                                     /* Hero Section Starts */
+
                                     /* Hero-Left-Section */
 
 .hero{
@@ -113,9 +114,6 @@ html,body{
     font-weight: 500;
     color: #6B6456;
     line-height: 3.7vh;
-}
-.hero-left-2nd-sec p span{
-    /* color:#E7E7E2 ; */
 }
 .hero-left-3rd-sec{
     width: 100%;
@@ -207,3 +205,102 @@ html,body{
 }
 
                                 /* Hero-Rigth Section Ends */
+
+                                /* About-Section Starts */
+
+                                /* About-left*/
+
+.about{
+    width: 100%;
+    /* border-top-left-radius:25px ; */
+    /* border-top-right-radius: 25px; */
+    height: 100vh;
+    padding: 0 3vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #080807;
+}
+.abt-1st-sec{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+.abt-container-text-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.container-heading{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* background-color: purple; */
+}
+.container-heading h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+    color: #D1D1C7;
+}
+.abt-container-text-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: plum; */
+}
+.container-paragraph{
+    width: 100%;
+    position: relative;
+    padding-left:  1.2vw;
+    /* background-color: peru; */
+}
+.container-paragraph p{
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: #A29E9A;
+    line-height: 4.5vh;
+}
+
+.skill-1st-sec{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(17, 0, 255); */
+}
+.skill-container-text-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.skill-container-heading{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* background-color: red; */
+}
+.skill-container-heading h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+    color: #D1D1C7;
+}
+.skill-container-text-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    /* background-color:aquamarine; */
+}
