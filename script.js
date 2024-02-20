@@ -1,48 +1,90 @@
-let t1=gsap.timeline();
-gsap.from(".nav-left",{
-    y:-100,
-    duration:0.6,
-    delay:0.3
+let tl=gsap.timeline();
+tl.from(".nav",{
+    opacity:0,
+    duration:0.3,
 })
-t1.from(".nav-right a",{
+tl.from(".nav-left h1,.nav-right a",{
     y:-100,
-    duration:0.6,
+    duration:0.8,
     delay:0.3,
-    stagger:0.1,
 })
 
-
-t1.from(".hero-left-1st-sec h1",{
+tl.from(".hero-left-1st-sec h1",{
     y:200,
     duration:0.7,
     stagger:0.2,
 })
-t1.from(".hero-left-2nd-sec p",{
+tl.from(".hero-left-2nd-sec p",{
     // transform:translateZ(-10),
     duration:0.7,
     opacity:0,
 })
-t1.from(".hero-left-3rd-sec",{
+tl.from(".hero-left-3rd-sec",{
     opacity:0,
     duration:0.7
 })
-t1.from(".front-shape",{
+tl.from(".front-shape",{
     x:100,
     opacity:0,
     duration:0.7,
 })
-t1.to("#back-shape",{
+tl.to("#back-shape",{
     rotate:20,
     x:40,
     // y:20,
     opacity:1,
     duration:0.7,
 })
-t1.from(".fa-brands ",{
+tl.from(".fa-brands ",{
     scale:0,
     // z:0,
     duration:0.4,
     stagger:0.2,
+})
+
+gsap.from(".container-heading h1",{
+    opacity:0,
+    y:100,
+    duration:0.6,
+    scrollTrigger:{
+        trigger:".container-heading h1",
+        scroller:"body",
+        markers:true,
+        start:"top 50%"
+    }
+})
+gsap.from(".container-paragraph p",{
+    opacity:0,
+    x:300,
+    duration:0.6,
+    scrollTrigger:{
+        trigger:".container-paragraph p",
+        scroller:"body",
+        markers:true,
+        start:"top 29.5%"
+    }
+})
+gsap.from(".skill-container-heading h1",{
+    opacity:0,
+    y:100,
+    duration:0.6,
+    scrollTrigger:{
+        trigger:".skill-container-heading h1",
+        scroller:"body",
+        markers:true,
+        start:"top 80%"
+    }
+})
+gsap.from(".skill-container-wrapper",{
+    opacity:0,
+    x:300,
+    duration:0.6,
+    scrollTrigger:{
+        trigger:".skill-container-wrapper",
+        scroller:"body",
+        markers:true,
+        start:"top 65%"
+    }
 })
 
 let h1s=document.querySelectorAll(".skill-container-heading h1");
@@ -94,3 +136,5 @@ btn.addEventListener("click",function(){
         })
     }
 })
+
+
