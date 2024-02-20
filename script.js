@@ -48,16 +48,18 @@ t1.from(".fa-brands ",{
 let h1s=document.querySelectorAll(".skill-container-heading h1");
 let ps=document.querySelectorAll(".skill-container-wrapper p");
 let skills=document.querySelector(".skills");
-console.log(skills);
 let education=document.querySelector(".education");
-let index=0;
+let arrayofright=[skills,education];
+let indexforleft=0;
+let indexforright=0;
 let animating=false;
 let btn=document.querySelector(".arrow-down");
 btn.addEventListener("click",function(){
+    // Setting animation for the left side
     if(!animating)
     {
         animating=true;
-        gsap.to(h1s[index],{
+        gsap.to(h1s[indexforleft],{
             top:'-=100%',
             onComplete:function(){
                 gsap.set(this._targets[0],{
@@ -68,18 +70,27 @@ btn.addEventListener("click",function(){
         })
     
         
-        index===h1s.length -1 ? (index=0) : index++;
-        console.log(h1s[index]);
-        gsap.to(h1s[index],{
+        indexforleft===h1s.length -1 ? (indexforleft=0) : indexforleft++;
+        console.log(h1s[indexforleft]);
+        gsap.to(h1s[indexforleft],{
             top:'-=100%',
         })
-        if(index==0){
-            skills.style.display="block";
-            education.style.display="none";
-        }
-        else{
-            education.style.display="block";
-            skills.style.display="none";
-        }
+        // Setting animation for right side too!
+        animating=true;
+        gsap.to(arrayofright[indexforright],{
+            top:'-=100%',
+            onComplete:function(){
+                gsap.set(this._targets[0],{
+                    top:100,
+                })
+                animating=false;
+            }
+        })
+    
+        
+        indexforright===arrayofright.length -1 ? (indexforright=0) : indexforright++;
+        gsap.to(arrayofright[indexforright],{
+            top:'-=100%',
+        })
     }
 })
