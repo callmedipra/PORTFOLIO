@@ -75,6 +75,17 @@ gsap.from(".skill-container-heading h1",{
         start:"top 80%"
     }
 })
+gsap.from(".arrow-down",{
+    opacity:0,
+    scale:0,
+    duration:0.6,
+    scrollTrigger:{
+        trigger:".arrow-down",
+        scroller:"body",
+        // markers:true,
+        start:"top 72%"
+    }
+})
 gsap.from(".skill-container-wrapper",{
     opacity:0,
     x:300,
