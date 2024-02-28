@@ -320,6 +320,7 @@ html,body{
     border-radius: 50px;
     padding: 0.8vw 0.8vw;
     position: absolute;
+    cursor: pointer;
 }
 .skill-container-heading button i{
     font-size: 4vw;
@@ -400,7 +401,7 @@ html,body{
                         /* Services Section */
 
 .services{
-    height: 100vh;
+    height: 105vh;
     width: 100%;
     padding: 0 3vw;
     position: relative;
@@ -409,6 +410,7 @@ html,body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0.5vw;
     background-color: #080807;
 }
 .services-1st-section{
@@ -424,12 +426,12 @@ html,body{
     height: 100%;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     /* background-color: yellow; */
 }
 .section-1st-left-heading{
-    width: 100%;
+    /* width: 100%; */
     position: relative;
     overflow: hidden;
     /* background-color: aqua; */
@@ -437,8 +439,24 @@ html,body{
 .section-1st-left-heading h1{
     font-size: 6.2vw;
     text-transform: uppercase;
+    position: relative;
     color: #D1D1C7;
+    /* background-color: pink; */
 }
+.section-1st-left-heading h1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #D1D1C7;
+    transition: all ease-in-out 0.6s;
+}
+.section-1st-left-heading h1:hover::after{
+    width: 100%;
+}
+
 .section-1st-right{
     width: 50%;
     height: 100%;
@@ -465,11 +483,19 @@ html,body{
     height: 65%;
     width: 100%;
     position: relative;
-    display: flex;
+    /* display: flex;
     align-items: center;
+    justify-content: center; */
+    /* background-color: violet; */
+}
+.service-container-wrapper{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items:start;
     justify-content: center;
     gap: 4vw;
-    /* background-color: violet; */
 }
 .service-container-one{
     width: 26vw;
@@ -513,6 +539,71 @@ html,body{
     font-size: 1.4vw;
     color: #A29E9A;
 }
+.more-classification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.more-sec-one{
+    /* background-color: pink; */
+    margin-top: 0.8vw;
+}
+.more-sec-one li{
+    /* background-color: blue; */
+    display: inline-block;
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: #A29E9A;
+}
+.more-sec-one li:nth-child(1){
+    margin-right: 1vw;
+    margin-left: 0.8vw;
+}
+.more-sec-two{
+    /* background-color: blue; */
+    margin-top: 1vw;
+}
+.more-sec-two li{
+    display: inline-block;
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: #A29E9A;
+}
+
+.more-classification-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.more-sec-two-one{
+    /* background-color: pink; */
+    margin-top: 0.8vw;
+}
+.more-sec-two-one li{
+    /* background-color: blue; */
+    display: inline-block;
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: #A29E9A;
+}
+.more-sec-two-one li:nth-child(1){
+    margin-right: 1vw;
+    margin-left: 0.8vw;
+}
+.more-sec-two-two{
+    /* background-color: blue; */
+    margin-top: 1vw;
+}
+.more-sec-two-two li{
+    display: inline-block;
+    font-size: 1.4vw;
+    font-weight: 400;
+    color: #A29E9A;
+}
+
+
 .service-container-two{
     width: 26vw;
     height: 28vw;
@@ -556,21 +647,23 @@ html,body{
     font-size: 1.4vw;
     color: #A29E9A;
 }
-.service-circle-one{
-    width: 18vw;
-    height: 18vw;
-    border-radius: 50%;
+.service-quotes-one{
     position:absolute;
-    top: 1%;
-    left: 0%;
-    background-color: #a29e9a;
+    top: 25%;
+    left: 10%;
 }
-.service-circle-two{
-    width: 18vw;
-    height: 18vw;
-    border-radius: 50%;
+.service-quotes-one i{
+    font-size: 10vw;
+    color:rgb(57, 54, 50);
+    opacity: 0.5;
+}
+.service-quotes-two{
     position:absolute;
-    bottom: 1%;
-    right: 0%;
-    background-color: #a29e9a;
+    top: 80%;
+    right: 10%;
+}
+.service-quotes-two i{
+    font-size: 10vw;
+    color:#393632;
+    opacity: 0.5;
 }
