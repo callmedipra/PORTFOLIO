@@ -42,6 +42,8 @@ tl.from(".fa-brands ",{
     stagger:0.2,
 })
 
+
+
 gsap.from(".container-heading h1",{
     opacity:0,
     y:100,
@@ -49,7 +51,7 @@ gsap.from(".container-heading h1",{
     scrollTrigger:{
         trigger:".container-heading h1",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 50%"
     }
 })
@@ -60,7 +62,7 @@ gsap.from(".container-paragraph p",{
     scrollTrigger:{
         trigger:".container-paragraph p",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 29.5%"
     }
 })
@@ -71,7 +73,7 @@ gsap.from(".skill-container-heading h1",{
     scrollTrigger:{
         trigger:".skill-container-heading h1",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 80%"
     }
 })
@@ -93,7 +95,7 @@ gsap.from(".skill-container-wrapper",{
     scrollTrigger:{
         trigger:".skill-container-wrapper",
         scroller:"body",
-        markers:true,
+        // markers:true,
         start:"top 65%"
     }
 })
@@ -149,3 +151,59 @@ btn.addEventListener("click",function(){
 })
 
 
+
+gsap.from(".section-1st-left-heading h1",{
+    opacity:0,
+    y:100,
+    duration:0.6,
+    scrollTrigger:{
+        trigger:".section-1st-left-heading h1",
+        scroller:"body",
+        // markers:true,
+        start:"top 90%"
+    }
+})
+gsap.from(".section-1st-right-paragraph p",{
+    opacity:0,
+    x:300,
+    duration:0.6,
+    scrollTrigger:{
+        trigger:".section-1st-right-paragraph p",
+        scroller:"body",
+        // markers:true,
+        start:"top 75.5%"
+    }
+})
+gsap.from(".service-container-wrapper",{
+    opacity:0,
+    duration:0.6,
+    stagger:2,
+    scrollTrigger:{
+        trigger:".service-container-wrapper",
+        scroller:"body",
+        // markers:true,
+        start:"top 70%"
+    }
+})
+gsap.from(".service-quotes-one",{
+    opacity:0,
+    x:-80,
+    duration:0.8,
+    scrollTrigger:{
+        trigger:".service-quotes-one",
+        scroller:"body",
+        // markers:true,
+        start:"top 25%"
+    }
+})
+gsap.from(".service-quotes-two",{
+    opacity:0,
+    x:80,
+    duration:0.8,
+    scrollTrigger:{
+        trigger:".service-quotes-two",
+        scroller:"body",
+        // markers:true,
+        start:"top 82.6%"
+    }
+})
