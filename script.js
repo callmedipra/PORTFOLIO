@@ -31,7 +31,7 @@ tl.from(".front-shape",{
 tl.to("#back-shape",{
     rotate:20,
     x:40,
-    // y:20,
+    // y:-20,
     opacity:1,
     duration:0.7,
 })
@@ -74,7 +74,7 @@ gsap.from(".skill-container-heading h1",{
         trigger:".skill-container-heading h1",
         scroller:"body",
         // markers:true,
-        start:"top 80%"
+        start:"top 88%"
     }
 })
 gsap.from(".arrow-down",{
@@ -115,10 +115,10 @@ btn.addEventListener("click",function(){
     {
         animating=true;
         gsap.to(h1s[indexforleft],{
-            top:'-=100%',
+            top:'-=110%',
             onComplete:function(){
                 gsap.set(this._targets[0],{
-                    top:100,
+                    top:110,
                 })
                 animating=false;
             }
@@ -133,10 +133,10 @@ btn.addEventListener("click",function(){
         // Setting animation for right side too!
         animating=true;
         gsap.to(arrayofright[indexforright],{
-            top:'-=100%',
+            top:'-=120%',
             onComplete:function(){
                 gsap.set(this._targets[0],{
-                    top:100,
+                    top:191,
                 })
                 animating=false;
             }
